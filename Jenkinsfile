@@ -6,12 +6,7 @@ pipeline {
     
   }
   stages {
-    stage('inicializar') {
-      steps {
-        sh 'ls'
-      }
-    }
-    stage('Buil') {
+    stage('Unit Test') {
       steps {
         sh '''chmod 766 gradlew
 ./gradlew test'''
