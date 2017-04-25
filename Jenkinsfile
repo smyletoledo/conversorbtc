@@ -6,7 +6,12 @@ pipeline {
     
   }
   stages {
-    stage('bild') {
+    stage('inicializar') {
+      steps {
+        sh 'ls'
+      }
+    }
+    stage('Build') {
       steps {
         sh 'ls'
       }
