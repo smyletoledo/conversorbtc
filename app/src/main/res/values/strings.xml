@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BitcoinConverter</string>
+    <string name="valor_em_real">Valor em Real:</string>
+    <string name="quantidade_de_bitcoin">Bitcoin</string>
+    <string name="valor_em_dollar">Valor em Dollar:</string>
+    <string name="valor_em_euro">Valor em Euro:</string>
+    <string name="quantidade">Digite a quantidade</string>
+    <string name="calcular">Calcular</string>
+    <string name="aguarde">Load...</string>
+
+</resources>
