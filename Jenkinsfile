@@ -13,7 +13,8 @@ pipeline {
     }
     stage('Buil') {
       steps {
-        sh './gradlew test'
+        sh '''chmod 766 gradlew
+./gradlew test'''
       }
     }
   }
