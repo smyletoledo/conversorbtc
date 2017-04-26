@@ -83,5 +83,11 @@ EMULATOR_NAME="emulator-"${EMULATOR_PORT}
 ./gradlew connectedDebugAndroidTest -Pdevices=${EMULATOR_NAME}'''
       }
     }
+    stage('gradle build') {
+      steps {
+        sh '''chmod 766 gradlew
+./gradlew check -x lint '''
+      }
+    }
   }
 }
