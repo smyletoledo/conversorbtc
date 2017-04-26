@@ -75,7 +75,7 @@ init_avd
 wait_avd'''
       }
     }
-    stage('Android Intrumental Test') {
+    stage('Android Instrumental Test') {
       steps {
         sh '''chmod 766 gradlew
 EMULATOR_PORT="5070"
