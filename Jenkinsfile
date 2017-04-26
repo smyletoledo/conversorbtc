@@ -75,5 +75,13 @@ init_avd
 wait_avd'''
       }
     }
+    stage('Android Intrumental Test') {
+      steps {
+        sh '''chmod 766 gradlew
+EMULATOR_PORT="5070"
+EMULATOR_NAME="emulator-"${EMULATOR_PORT}
+./gradlew connectedDebugAndroidTest -Pdevices=${EMULATOR_NAME}'''
+      }
+    }
   }
 }
